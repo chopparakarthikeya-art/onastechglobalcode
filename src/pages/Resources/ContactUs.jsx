@@ -6,13 +6,13 @@ const services = ['ERP','Consulting', 'Staffing', 'Digital Transformation', 'Sof
 const offices = [
   {
     name: 'Hyderabad Office',
-    company: 'ONAS Consulting Services Pvt Ltd',
-    address: 'Vasavi Sky City, 8th Floor, Quick Start-CoWorking, Gachibowli Cir, Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032',
+    company: 'ONASTech Global Services Pvt Ltd',
+    address: 'Vasavi Sky City, 8th Floor, Gachibowli Cir, Telecom Nagar, Gachibowli, Hyderabad, Telangana 500032',
     mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.437211628847!2d78.36212117369062!3d17.438775801325626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2ee44e40b52cf5e7%3A0xcb5f6c9932fd733e!2sONAS%20Consulting%20Services!5e0!3m2!1sen!2sus!4v1759363285471!5m2!1sen!2sus'
   },
   {
     name: 'Chennai Office',
-    company: 'ONAS Global Services Pvt Ltd',
+    company: 'ONASTech Global Services Pvt Ltd',
     address: 'GREETA TOWERS, Industrial Estate, 1st Floor, Thirumalai Nagar, Perungudi, Chennai, TN, India – 600096',
     mapSrc: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7776.57706122955!2d80.24336!3d12.95338!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d1ad4ff789f%3A0xc9efd3550dfc21c2!2s4th%20St%2C%20Manikkodi%20Srinivasan%20Nagar%2C%20Perungudi%2C%20Chennai%2C%20Tamil%20Nadu%20600096!5e0!3m2!1sen!2sin!4v1759363488370!5m2!1sen!2sin'
   },
@@ -310,8 +310,8 @@ export default function ContactUs() {
 
             <Typography variant="subtitle1" sx={{ mb: 1 }}>
               <strong>Call Us:</strong>{' '}
-              <a href="tel:+91-984 800 4777" style={{ textDecoration: 'none', color: '#4fc3f7' }}>
-                +91-984 800 4777
+              <a href="tel:+91-928 150 6440"style={{ textDecoration: 'none', color: '#4fc3f7' }}>
+                +91-928 150 6440 & 441
               </a>{' '}
               &{' '}
               <a href="tel:+1 607-326-2406" style={{ textDecoration: 'none', color: '#4fc3f7' }}>

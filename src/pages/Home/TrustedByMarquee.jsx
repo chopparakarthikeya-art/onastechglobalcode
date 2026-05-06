@@ -7,6 +7,9 @@ import Salesforce from "../../assets/images/trustedByMarquee/salesforce.svg";
 import Netsuite from "../../assets/images/trustedByMarquee/netsuite.png";
 import Servicenow from "../../assets/images/trustedByMarquee/servicenow.png";
 import Workday from "../../assets/images/trustedByMarquee/workday.png";
+import MicrosoftDynamics from "../../assets/images/trustedByMarquee/microsoft-dynamics.png"; 
+
+
 // import WDD from "../../assets/images/trustedByMarquee/webdev.png";
 // import SEO from "../../assets/images/trustedByMarquee/seo.png";
 // import SocialMark from "../../assets/images/trustedByMarquee/socialmm.png";
@@ -23,6 +26,7 @@ const companies = [
   { name: "Netsuite", logo: Netsuite },
   { name: "Servicenow", logo: Servicenow },
   { name: "Workday", logo: Workday },
+  { name: "Microsoft Dynamics 365", logo: MicrosoftDynamics },
   // { name: "Web Design & Devlopment", logo: WDD },
   // { name: "Search Engine Optimization", logo: SEO },
   // { name: "Social Marketing", logo: SocialMark },

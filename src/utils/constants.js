@@ -1,10 +1,12 @@
+import { label, path } from "framer-motion/client";
+ 
 // Site info
 export const SITE = {
   name: 'ONAS',
   tagline: 'Empowering Enterprises with Technology & Talent',
-  copyright: `© ${new Date().getFullYear()} ONAS Global Services Pvt Ltd | All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} ONASTech Global Services Pvt Ltd | All rights reserved.`,
 };
-
+ 
 // Navigation links
 export const NAV_LINKS = [
   {
@@ -12,14 +14,19 @@ export const NAV_LINKS = [
     path: '/how-we-help',
     children: [
       {
-        category: 'Enterprise Resource Planning',
+        category: 'AI ERP & CRM SERVICES',
         items: [
           { label: 'SAP', path: '/how-we-help/erp/sap' },
-          { label: 'Oracle', path: 'https://www.onasit.com/	' },
-          { label: 'Salesforce', path: '/how-we-help/erp/salesforce' },
+          { label: 'Oracle', path: 'https://www.onasit.com/ ' },
+       
           { label: 'Netsuite', path: '/how-we-help/erp/netsuite' },
-          { label: 'Service Now', path: '/how-we-help/erp/servicenow' },
+         
           { label: 'Workday', path: '/how-we-help/erp/workday' },
+          { label: 'Microsoft Dynamic 365', path: '/how-we-help/erp/microsoft-dynamics-365' },
+          { label: 'IFS', path: 'how-we-help/erp/IFS' },
+           { label: 'Salesforce', path: '/how-we-help/erp/salesforce' },
+          { label: 'Service Now', path: '/how-we-help/erp/servicenow' },
+       
         ],
       },
       {
@@ -49,7 +56,7 @@ export const NAV_LINKS = [
         ],
       },
       {
-        category: 'Other Services',
+        category: 'JAVA & SEO Services',
         items: [
           { label: 'Web Designing & Development', path: '/how-we-help/other-services/web-dev' },
           { label: 'Search Engine Optimization', path: '/how-we-help/other-services/seo' },
@@ -61,7 +68,7 @@ export const NAV_LINKS = [
       },
     ],
   },
-
+ 
   {
     label: 'Industries',
     path: '/who-we-help',
@@ -87,11 +94,11 @@ export const NAV_LINKS = [
           { label: 'Manufacturing', path: '/who-we-help/industries#manufacturing' },
           { label: 'Hi Tech', path: '/who-we-help/industries#hi-tech' },
         ],
-
+ 
       },
     ],
   },
-
+ 
   {
     label: 'Why ONAS',
     path: '/why-onas',
@@ -106,7 +113,7 @@ export const NAV_LINKS = [
       { label: 'Life @ ONAS', path: '/why-onas/life' },
     ],
   },
-
+ 
   {
     label: 'Resources',
     path: '/resources',
@@ -121,7 +128,7 @@ export const NAV_LINKS = [
       { label: 'News Room', path: '/resources/newsroom/' },
     ],
   },
-
+ 
   {
     label: 'Staffing',
     path: '/staffing',
@@ -169,4 +176,5 @@ export const NAV_LINKS = [
     ],
   },
 ];
-
+ 
+ 

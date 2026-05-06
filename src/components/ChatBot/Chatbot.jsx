@@ -678,7 +678,7 @@ const Chatbot = () => {
           return {
             text:`<strong>Contact Our Team ( 24/7 Support) </strong><br><br>
             📞 <strong>Phone:</strong> <a href="tel:+1 201-589-8827" class="chatbot-link">+1 201-589-8827</a><br>
-            📞 <strong>Phone 2:</strong> <a href="tel:+91-9848 00 4777" class="chatbot-link">+91-9848 00 4777</a><br>
+            📞 <strong>Phone 2:</strong> <a href="tel:+91-9281 50 6440"class="chatbot-link">+91-9281 50 6440"</a><br>
             📧 <strong>Email:</strong> <a href="mailto:sales@onasglobal.com" class="chatbot-link">sales@onasglobal.com</a><br>
              <strong>Website:</strong> <a href="https://onasglobal.com/" target="_blank" rel="noopener noreferrer" class="chatbot-link">https://onasglobal.com/</a><br><br>
             <strong>Business Hours:</strong><br>

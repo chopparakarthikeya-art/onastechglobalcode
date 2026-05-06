@@ -153,7 +153,7 @@ export default function Header() {
               fontFamily: "Poppins, Montserrat, sans-serif",
         }}>
           <MuiLink
-            href="tel:+91-9848004777"
+            href="tel:+91-9281506440"
             underline="none"
             color="inherit"
             sx={{
@@ -163,7 +163,7 @@ export default function Header() {
                   fontFamily: "Poppins, Montserrat, sans-serif",
             }}
           >
-            <PhoneIcon fontSize="small" /> 91-984 800 4777
+            <PhoneIcon fontSize="small" /> 91-928 150 6440 & 44 1
           </MuiLink>&nbsp; &amp;&nbsp;
           <MuiLink
             href="tel:+16073262406"
@@ -171,7 +171,7 @@ export default function Header() {
             color="inherit"
             sx={{
               fontSize: '15px',
-              display: "flex",
+              display: "flex",  
               alignItems: "center",
               gap: 0.5,
                    fontFamily: "Poppins, Montserrat, sans-serif",
@@ -193,12 +193,12 @@ export default function Header() {
       >
         <PhoneIcon fontSize="small" />
         <MuiLink
-          href="tel:+919848004777"
+          href="tel:+919281506440"
           underline="none"
           color="inherit"
           sx={{       fontFamily: "Poppins, Montserrat, sans-serif", }}
         >
-          +91-9848004777
+          +91-9281506440
         </MuiLink> &nbsp;&amp;&nbsp;
         <MuiLink
           href="tel:+16073262406"
@@ -370,7 +370,7 @@ export default function Header() {
                         <Box
                           sx={{
                             display: "grid",
-                            gap: 3,
+                            gap: 1,
                             mt: 3,
                             gridTemplateColumns:
                               nav.children.length <= 2

@@ -88,6 +88,8 @@ export default function MainFooter() {
                 { label: 'Netsuite', href: '/how-we-help/erp/netsuite' },
                 { label: 'Service Now', href: '/how-we-help/erp/servicenow' },
                 { label: 'Workday', href: '/how-we-help/erp/workday' },
+                { label: 'MicrosoftDynamics365', href: '/how-we-help/erp/microsoft-dynamics-365' },
+                { label: 'IFS', href: 'how-we-help/erp/IFS' }
               ].map((item, idx) => (
                 <MuiLink
                   key={idx}
@@ -113,6 +115,7 @@ export default function MainFooter() {
               ))}
             </Stack>
           </Grid>
+          
 
           {/* Digital Transformation */}
           <Grid item xs={6} sm={3} md={2}>
@@ -139,6 +142,7 @@ export default function MainFooter() {
                 { label: 'IT Asset Management Solutions', href: '/how-we-help/digital-transformation/it-asset-management' },
                 { label: 'GenAI Solutions', href: '/how-we-help/digital-transformation/genai' },
                 { label: 'DevOps & Infra Automation', href: '/how-we-help/digital-transformation/devops' },
+
               ].map((item, idx) => (
                 <MuiLink
                   key={idx}
@@ -511,7 +515,7 @@ export default function MainFooter() {
                   </Typography>
                   <Stack spacing={0.1}>
                     <MuiLink
-                      href="tel:+919848004777"
+                      href="tel:+919281506440"
                       sx={{
                         color: 'white',
                         fontWeight: 500,
@@ -521,10 +525,10 @@ export default function MainFooter() {
                         '&:hover': { color: '#64B5F6' }
                       }}
                     >
-                      91-984 800 4777
+                      91-928 150 6440
                     </MuiLink>
                     <MuiLink
-                      href="tel:+919848005777"
+                      href="tel:+919281506440"
                       sx={{
                         color: 'white',
                         fontWeight: 500,
@@ -534,7 +538,7 @@ export default function MainFooter() {
                         '&:hover': { color: '#64B5F6' }
                       }}
                     >
-                      91-984 800 5777
+                      91-928 150 6441
                     </MuiLink>
                     <MuiLink
                       href="tel:+16073262406"

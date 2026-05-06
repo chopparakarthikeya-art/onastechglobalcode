@@ -12,6 +12,8 @@ import Salesforce from './pages/howWeHelp/erp/Salesforce.jsx';
 import Netsuite from './pages/howWeHelp/erp/Netsuite.jsx';
 import ServiceNow from './pages/howWeHelp/erp/ServiceNow.jsx';
 import Workday from './pages/howWeHelp/erp/Workday.jsx';
+import MicrosoftDynamics365 from './pages/howWeHelp/erp/MicrosoftDynamics365.jsx';
+import IFSCloud from './pages/howWeHelp/erp/IFS.jsx';
 
 // Digital Transformation
 import AIML from './pages/howWeHelp/digitaltransformation/AIML.jsx';
@@ -25,7 +27,7 @@ import ITAssetManagement from './pages/howWeHelp/digitaltransformation/ITAssetMa
 import GenAI from './pages/howWeHelp/digitaltransformation/GenerativeAI.jsx';
 import DevopsFeatures from './pages/howWeHelp/digitaltransformation/DevOpsFeatures.jsx';
 
-//MITOper
+// MIT Operations
 import ApplicationMaintenanceServices from './pages/howWeHelp/mitoperations/AppMaintenance.jsx';
 import CloudSupport from './pages/howWeHelp/mitoperations/CloudSupport.jsx';
 import Cybersecurity from './pages/howWeHelp/mitoperations/Cybersecurity.jsx';
@@ -33,9 +35,8 @@ import ITInfrastructureServices from './pages/howWeHelp/mitoperations/ITInfra.js
 import NetworkSupport from './pages/howWeHelp/mitoperations/NetworkSupport.jsx';
 import Helpdesk from './pages/howWeHelp/mitoperations/HelpDesk.jsx';
 
-//Industries
-import Industries from './pages/whoWeHelp//Industries.jsx';
-
+// Industries
+import Industries from './pages/whoWeHelp/Industries.jsx';
 
 // Other Services
 import WebDevelopment from './pages/howWeHelp/otherservices/WebDevelopment.jsx';
@@ -72,20 +73,19 @@ import ITConsulting from './pages/Staffing/ITConsulting.jsx';
 import ProfessionalServices from './pages/Staffing/ProfessionalServices.jsx';
 import RequestCallback from './pages/Staffing/submitVacancy/RequestCallback.jsx';
 
-import SEOWrapper from './components/SEOWrapper';
+// EDTech Services
+import LMSImplementation from "./pages/education/LMSImplementation.jsx";
+import ELearningPlatform from "./pages/education/ELearningPlatform.jsx";
+import EducationalAnalytics from "./pages/education/EducationalAnalytics.jsx";
+import VirtualClassroom from "./pages/education/VirtualClassroom.jsx";
 
-//EDTech Services
-
-import  LMSImplementation  from "./pages/education/LMSImplementation.jsx";
-import  ELearningPlatform from "./pages/education/ELearningPlatform.jsx";
-import  EducationalAnalytics from "./pages/education/EducationalAnalytics.jsx";
-import  VirtualClassroom from "./pages/education/VirtualClassroom.jsx";
-
-//security
+// Security
 import SecurityRisk from './pages/security/SecurityRisk.jsx';
 import NetworkSecurity from'./pages/security/NetworkSecurity.jsx';
 import Dataprotection from './pages/security/DataProtection.jsx';
 import ComplianceManagement from  './pages/security/ComplianceManagement.jsx';
+
+import SEOWrapper from './components/SEOWrapper';
 
 // Scroll to hash hook
 function ScrollToHash() {
@@ -99,12 +99,11 @@ function ScrollToHash() {
         el.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      // Scroll to top if no hash
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }, [location]);
 
-  return null; // This component doesn't render anything
+  return null;
 }
 
 export default function App() {
@@ -112,10 +111,9 @@ export default function App() {
     <>
       <SEOWrapper />
       <Layout>
-        <ScrollToHash /> {/* Global scroll handler */}
+        <ScrollToHash />
         <Routes>
           <Route path="/" element={<Home />} />
-
 
           {/* ERP */}
           <Route path="/how-we-help/erp/sap" element={<SAP />} />
@@ -124,6 +122,8 @@ export default function App() {
           <Route path="/how-we-help/erp/netsuite" element={<Netsuite />} />
           <Route path="/how-we-help/erp/servicenow" element={<ServiceNow />} />
           <Route path="/how-we-help/erp/workday" element={<Workday />} />
+          <Route path="/how-we-help/erp/microsoft-dynamics-365" element={<MicrosoftDynamics365 />} />
+          <Route path="/how-we-help/erp/ifs" element={<IFSCloud />} />
 
           {/* Digital Transformation */}
           <Route path="/how-we-help/digital-transformation/ai-ml" element={<AIML />} />
@@ -137,15 +137,13 @@ export default function App() {
           <Route path="/how-we-help/digital-transformation/genai" element={<GenAI />} />
           <Route path="/how-we-help/digital-transformation/devops" element={<DevopsFeatures />} />
 
-
-          {/*Managed It Operations*/}
+          {/* Managed IT Operations */}
           <Route path="/how-we-help/managed-it-operations/app-maintenance" element={<ApplicationMaintenanceServices />} />
           <Route path="/how-we-help/managed-it-operations/cloud-support" element={<CloudSupport />} />
           <Route path="/how-we-help/managed-it-operations/cybersecurity" element={<Cybersecurity />} />
           <Route path="/how-we-help/managed-it-operations/it-infra" element={<ITInfrastructureServices />} />
           <Route path="/how-we-help/managed-it-operations/network-support" element={<NetworkSupport />} />
           <Route path="/how-we-help/managed-it-operations/helpdesk" element={<Helpdesk />} />
-
 
           {/* Other Services */}
           <Route path="/how-we-help/other-services/web-dev" element={<WebDevelopment />} />
@@ -154,7 +152,7 @@ export default function App() {
           <Route path="/how-we-help/other-services/content-marketing" element={<ContentMarketing />} />
           <Route path="/how-we-help/other-services/email-marketing" element={<EmailMarketing />} />
           <Route path="/how-we-help/other-services/ppc" element={<PPCAdvertising />} />
-          <Route path='/how-we-help/other-services/mobileapp' element={<MobileApp/>}/>---------
+          <Route path='/how-we-help/other-services/mobileapp' element={<MobileApp/>}/>
           <Route path='/how-we-help/other-services/uiuxsection' element={<UIUXSection/>}/>
 
           {/* Who we help */}
@@ -170,37 +168,37 @@ export default function App() {
           <Route path="/why-onas/investors" element={<Investors />} />
           <Route path="/why-onas/life" element={<LifeAtOnas />} />
 
-
           {/* Resources */}
           <Route path="/resources/media" element={<Media />} />
           <Route path="/resources/ideas" element={<Ideas />} />
           <Route path="/resources/awards" element={<Awards />} />
           <Route path="/resources/blogs" element={<Blogs />} />
-          <Route path="/resources/contact-us/" element={<ContactUs />} />
-          <Route path="/resources/careers/" element={<Careers />} />
-          <Route path="/resources/case-studies/" element={<CaseStudies />} />
-          <Route path="/resources/newsroom/" element={<NewsRoom />} />
+          <Route path="/resources/contact-us" element={<ContactUs />} />
+          <Route path="/resources/careers" element={<Careers />} />
+          <Route path="/resources/case-studies" element={<CaseStudies />} />
+          <Route path="/resources/newsroom" element={<NewsRoom />} />
 
           {/* Staffing */}
-          <Route path="/staffing/submit-a-vacancy/request-a-call-back/" element={<RequestCallback />} />
+          <Route path="/staffing/submit-a-vacancy/request-a-call-back" element={<RequestCallback />} />
           <Route path="/staffing/it-consulting" element={<ITConsulting />} />
           <Route path="/staffing/professional-services" element={<ProfessionalServices />} />
+
           {/* EDTech Services */}
-                    <Route path="/education/lms-implementation" element={<LMSImplementation />} />
-                    <Route path="/education/e-learning" element={<ELearningPlatform />} />
-                    <Route path="/education/analytics" element={<EducationalAnalytics />} />
-                    <Route path="/education/virtual-classroom" element={<VirtualClassroom />} />
-          {/* security */}
-                   <Route path='/security/securityrisk' element={<SecurityRisk/>}/>
-                    <Route path="/security/dataprotection" element={<Dataprotection />} />
-                    <Route path="/security/networksecurity" element={<NetworkSecurity />} />
-                    <Route path="/security/compliancemanagement" element={<ComplianceManagement />} />
+          <Route path="/education/lms-implementation" element={<LMSImplementation />} />
+          <Route path="/education/e-learning" element={<ELearningPlatform />} />
+          <Route path="/education/analytics" element={<EducationalAnalytics />} />
+          <Route path="/education/virtual-classroom" element={<VirtualClassroom />} />
+
+          {/* Security */}
+          <Route path='/security/securityrisk' element={<SecurityRisk/>}/>
+          <Route path="/security/dataprotection" element={<Dataprotection />} />
+          <Route path="/security/networksecurity" element={<NetworkSecurity />} />
+          <Route path="/security/compliancemanagement" element={<ComplianceManagement />} />
 
           {/* 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </>
-
   );
 }
